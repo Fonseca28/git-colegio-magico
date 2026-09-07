@@ -1,12 +1,12 @@
 package com.colegiomagico.reto7;
-
+import java.util.Arrays;
 /**
  * Retorna el número mayor dentro del arreglo de tamaños.
  */
 public class CofreVaritas {
 
     public static int varitaMasPoderosa(int[] tamanos) {
-        return 0; // TODO: Cambia esto
+        return Arrays.stream(tamanos).max().getAsInt(); // TODO: Cambia esto
     }
 
     public static void main(String[] args) {
