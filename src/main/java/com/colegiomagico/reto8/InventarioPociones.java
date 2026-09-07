@@ -6,7 +6,9 @@ package com.colegiomagico.reto8;
 public class InventarioPociones {
 
     public static java.util.List<String> filtrar(java.util.List<String> ingredientes) {
-        return new java.util.ArrayList<>(); // TODO: Cambia esto
+        return ingredientes.stream()
+            .filter(i -> i.startsWith("A"))
+            .collect(java.util.stream.Collectors.toList());// TODO: Cambia esto
     }
 
     public static void main(String[] args) {
